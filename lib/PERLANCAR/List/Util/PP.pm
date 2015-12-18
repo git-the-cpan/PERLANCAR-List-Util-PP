@@ -1,7 +1,7 @@
 package PERLANCAR::List::Util::PP;
 
 our $DATE = '2015-12-18'; # DATE
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 #IFUNBUILT
 use strict 'vars', 'subs';
@@ -37,7 +37,7 @@ sub import {
 
   # (RT88848) Touch the caller's $a and $b, to avoid the warning of
   #   Name "main::a" used only once: possible typo" warning
-  no strict 'refs';
+  #no strict 'refs';
   ${"${pkg}::a"} = ${"${pkg}::a"};
   ${"${pkg}::b"} = ${"${pkg}::b"};
 
@@ -237,8 +237,8 @@ sub product (@) {
 sub reduce (&@) {
   my $f = shift;
   unless ( ref $f && eval { \&$f } ) {
-    require Carp;
-    Carp::croak("Not a subroutine reference");
+    #require Carp;
+    die "Not a subroutine reference";
   }
 
   return shift unless @_ > 1;
@@ -309,7 +309,7 @@ PERLANCAR::List::Util::PP - Pure-perl implementation of List::Util
 
 =head1 VERSION
 
-This document describes version 0.03 of PERLANCAR::List::Util::PP (from Perl distribution PERLANCAR-List-Util-PP), released on 2015-12-18.
+This document describes version 0.04 of PERLANCAR::List::Util::PP (from Perl distribution PERLANCAR-List-Util-PP), released on 2015-12-18.
 
 =head1 SYNOPSIS
 

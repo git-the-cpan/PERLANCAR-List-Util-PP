@@ -20,7 +20,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=PERLANCAR-List-Util-PP
   homepage: https://metacpan.org/release/PERLANCAR-List-Util-PP
   repository: git://github.com/perlancar/perl-PERLANCAR-List-Util-PP.git
-version: '0.03'
+version: '0.04'
 x_Dist_Zilla:
   perl:
     version: '5.022000'
