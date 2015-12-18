@@ -26,11 +26,6 @@
             "Test::Pod::Coverage" : "1.08"
          }
       },
-      "runtime" : {
-         "requires" : {
-            "perl" : "5.010001"
-         }
-      },
       "test" : {
          "requires" : {
             "File::Spec" : "0",
@@ -52,7 +47,7 @@
          "web" : "https://github.com/perlancar/perl-PERLANCAR-List-Util-PP"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.022000"

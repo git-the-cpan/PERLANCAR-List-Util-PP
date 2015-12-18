@@ -1,13 +1,13 @@
 SYNOPSIS
 
+    Use as you would use List::Util:
+
      use PERLANCAR::List::Util::PP qw(max min maxstr minstr);
     
      my $max = max @list;
      my $min = min @list;
 
 DESCRIPTION
-
-    NOTE: EARLY RELEASE, NOT ALL FUNCTIONS HAVE BEEN IMPLEMENTED
 
     Most of the time you will not need this module. Use List::Util instead.
     This module is useful for testing/benchmarking, or perhaps in the rare
@@ -16,37 +16,19 @@ DESCRIPTION
     copy-and-paste the routines from this module (or, if you use
     Dist::Zilla, you can also use Dist::Zilla::Plugin::InsertBlock).
 
-    List::Util::PP was also available as part of Scalar-List-Utils but was
-    dropped (it was still included as part of perl 5.16). I plan to
-    incorporate (at least some) code from the old code base [2].
+    Most of the code is from the old List::Util::PP code [2], which was
+    dropped from the Scalar-List-Utils distribution and was no longer part
+    of core perl.
 
 FUNCTIONS
 
     For more details on each function, see List::Util.
 
- reduce
-
-    TBD
+ all
 
  any
 
-    TBD
-
- all
-
-    TBD
-
- none
-
-    TBD
-
- notall
-
-    TBD
-
  first
-
-    TBD
 
  max
 
@@ -56,49 +38,33 @@ FUNCTIONS
 
  minstr
 
- product
+ none
 
-    TBD
-
- sum
-
-    TBD
-
- sum0
-
-    TBD
-
- pairs
-
-    TBD
-
- unpairs
-
-    TBD
-
- pairkeys
-
-    TBD
-
- pairvalues
-
-    TBD
-
- pairgrep
-
-    TBD
+ notall
 
  pairfirst
 
-    TBD
+ pairgrep
+
+ pairkeys
 
  pairmap
 
-    TBD
+ pairs
+
+ pairvalues
+
+ product
+
+ reduce
 
  shuffle
 
-    TBD
+ sum
+
+ sum0
+
+ unpairs
 
 SEE ALSO
 

@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.010001;
+
 
 use ExtUtils::MakeMaker;
 
@@ -14,7 +14,6 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "PERLANCAR-List-Util-PP",
   "LICENSE" => "perl",
-  "MIN_PERL_VERSION" => "5.010001",
   "NAME" => "PERLANCAR::List::Util::PP",
   "PREREQ_PM" => {},
   "TEST_REQUIRES" => {
@@ -23,7 +22,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }
